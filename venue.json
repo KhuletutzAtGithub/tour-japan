@@ -1,0 +1,485 @@
+{
+    "results": [
+        {
+            "fsq_id": "4b74e3e5f964a52003f72de3",
+            "categories": [
+                {
+                    "id": 16032,
+                    "name": "Park",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "distance": 26073,
+            "geocodes": {
+                "main": {
+                    "latitude": 35.67713452844016,
+                    "longitude": 139.71837043762207
+                }
+            },
+            "location": {
+                "address": "霞ヶ丘町1-1",
+                "address_extended": "明治神宮球場",
+                "country": "JP",
+                "locality": "Tokyo",
+                "neighborhood": [
+                    "Akasaka / Roppongi"
+                ],
+                "postcode": "160-0013",
+                "region": "Tokyo"
+            },
+            "name": "Meiji Jingu Gaien (明治神宮外苑)",
+            "related_places": {
+                "parent": {
+                    "fsq_id": "f447d81151c14d08078b83ea",
+                    "name": "明治神宮外苑聖徳記念絵画館"
+                },
+                "children": [
+                    {
+                        "fsq_id": "4b5844e4f964a5204a5028e3",
+                        "name": "明治神宮外苑 フットサル信濃町コート"
+                    },
+                    {
+                        "fsq_id": "4b74e55af964a52031f72de3",
+                        "name": "明治神宮外苑軟式球場"
+                    }
+                ]
+            },
+            "timezone": "Asia/Tokyo"
+        },
+        {
+            "fsq_id": "4b0587a1f964a5209b9d22e3",
+            "categories": [
+                {
+                    "id": 16039,
+                    "name": "Urban Park",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "distance": 30961,
+            "geocodes": {
+                "main": {
+                    "latitude": 35.71467517039568,
+                    "longitude": 139.7734871506691
+                }
+            },
+            "location": {
+                "address": "上野公園5-20",
+                "country": "JP",
+                "locality": "Tokyo",
+                "region": "Tokyo"
+            },
+            "name": "Ueno Park (上野恩賜公園)",
+            "related_places": {
+                "children": [
+                    {
+                        "fsq_id": "4df99ad3ae60f95f822431b5",
+                        "name": "蓮池"
+                    },
+                    {
+                        "fsq_id": "593507146a8d865d654b6c05",
+                        "name": "自由な女神"
+                    },
+                    {
+                        "fsq_id": "5c2828f28a6f17002cda3206",
+                        "name": "寄る辺"
+                    }
+                ]
+            },
+            "timezone": "Asia/Tokyo"
+        },
+        {
+            "fsq_id": "4b566b84f964a5209e0f28e3",
+            "categories": [
+                {
+                    "id": 16020,
+                    "name": "Historic and Protected Site",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/historicsite_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "distance": 29058,
+            "geocodes": {
+                "main": {
+                    "latitude": 35.6825,
+                    "longitude": 139.7521
+                }
+            },
+            "location": {
+                "address": "千代田1-1",
+                "country": "JP",
+                "locality": "Tokyo",
+                "neighborhood": [
+                    "Ginza / Tokyo Nihonbashi"
+                ],
+                "postcode": "100-8111",
+                "region": "Tokyo"
+            },
+            "name": "Imperial Palace (皇居)",
+            "related_places": {
+                "children": [
+                    {
+                        "fsq_id": "4e1e99c218a813a4dac1c7eb",
+                        "name": "清水濠"
+                    },
+                    {
+                        "fsq_id": "4e1e9ab4e4cd0a3823040657",
+                        "name": "大手濠"
+                    }
+                ]
+            },
+            "timezone": "Asia/Tokyo"
+        },
+        {
+            "fsq_id": "4b5ab0ddf964a520f5d028e3",
+            "categories": [
+                {
+                    "id": 10051,
+                    "name": "Stadium",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/stadium_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "distance": 28799,
+            "geocodes": {
+                "main": {
+                    "latitude": 35.69335624055126,
+                    "longitude": 139.74986493587494
+                }
+            },
+            "location": {
+                "address": "北の丸公園2-3",
+                "country": "JP",
+                "locality": "Tokyo",
+                "postcode": "102-8321",
+                "region": "Tokyo"
+            },
+            "name": "Nippon Budokan (日本武道館)",
+            "related_places": {
+                "children": []
+            },
+            "timezone": "Asia/Tokyo"
+        },
+        {
+            "fsq_id": "4b5a79a1f964a52058c728e3",
+            "categories": [
+                {
+                    "id": 17033,
+                    "name": "Department Store",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/departmentstore_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "distance": 24546,
+            "geocodes": {
+                "main": {
+                    "latitude": 35.68717092477456,
+                    "longitude": 139.70237921719323
+                }
+            },
+            "location": {
+                "address": "千駄ヶ谷5丁目24-2",
+                "address_extended": "タイムズスクエアビル 2~8階",
+                "country": "JP",
+                "cross_street": "タイムズスクエアビル 2F-8F",
+                "locality": "Shibuya",
+                "postcode": "151-0051",
+                "region": "Tokyo"
+            },
+            "name": "Tokyu Hands (東急ハンズ)",
+            "related_places": {
+                "parent": {
+                    "fsq_id": "4d32911b5017a093aae54a9b",
+                    "name": "タカシマヤ タイムズスクエア"
+                },
+                "children": [
+                    {
+                        "fsq_id": "50b8736de4b03a9fd8ff3901",
+                        "name": "Moleskine アトリエ 東急ハンズ新宿店"
+                    },
+                    {
+                        "fsq_id": "59099c471f744040a5d91955",
+                        "name": "拭 nugoo"
+                    },
+                    {
+                        "fsq_id": "51cec533498e603a98a5bd61",
+                        "name": "WATCH POLITiCS"
+                    }
+                ]
+            },
+            "timezone": "Asia/Tokyo"
+        },
+        {
+            "fsq_id": "4b59ebdaf964a52002a128e3",
+            "categories": [
+                {
+                    "id": 10001,
+                    "name": "Amusement Park",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/themepark_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [
+                {
+                    "id": "b2d4bdff-6a63-4d1f-83c4-07e9f890751a",
+                    "name": "Disney Resorts and Parks"
+                }
+            ],
+            "distance": 41262,
+            "geocodes": {
+                "main": {
+                    "latitude": 35.632922,
+                    "longitude": 139.880391
+                }
+            },
+            "location": {
+                "address": "舞浜1-1",
+                "country": "JP",
+                "locality": "Urayasu",
+                "postcode": "279-0031",
+                "region": "Chiba"
+            },
+            "name": "Tokyo Disneyland (東京ディズニーランド)",
+            "related_places": {
+                "children": [
+                    {
+                        "fsq_id": "533f4bb611d26f9392bcd8e1",
+                        "name": "スペース・マウンテン ファストパス発券所"
+                    },
+                    {
+                        "fsq_id": "4e913d69b63456ab95bfcd95",
+                        "name": "ハーモニーフェア "
+                    }
+                ]
+            },
+            "timezone": "Asia/Tokyo"
+        },
+        {
+            "fsq_id": "4c2bf7fe8abca593441c0120",
+            "categories": [
+                {
+                    "id": 10001,
+                    "name": "Amusement Park",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/themepark_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [
+                {
+                    "id": "b2d4bdff-6a63-4d1f-83c4-07e9f890751a",
+                    "name": "Disney Resorts and Parks"
+                }
+            ],
+            "distance": 41798,
+            "geocodes": {
+                "main": {
+                    "latitude": 35.626212760692965,
+                    "longitude": 139.88483905792236
+                }
+            },
+            "location": {
+                "address": "舞浜1-13",
+                "address_extended": "東京ディズニーシー ホテルミラコスタ  ディズニーホテル",
+                "country": "JP",
+                "locality": "Urayasu",
+                "postcode": "279-0031",
+                "region": "Chiba"
+            },
+            "name": "Tokyo DisneySea (東京ディズニーシー)",
+            "related_places": {
+                "children": [
+                    {
+                        "fsq_id": "4ee9a76d5c5c0575fa9baa45",
+                        "name": "S.S. コロンビア号"
+                    },
+                    {
+                        "fsq_id": "4dfec778fa76b5130d771fdd",
+                        "name": "ミステリアスアイランド Mysterious Island"
+                    },
+                    {
+                        "fsq_id": "5258de2e11d207c606dfee39",
+                        "name": "オペレーションテラス2"
+                    }
+                ]
+            },
+            "timezone": "Asia/Tokyo"
+        },
+        {
+            "fsq_id": "4b89fd41f964a520685a32e3",
+            "categories": [
+                {
+                    "id": 19031,
+                    "name": "Airport",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/airport_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "distance": 35767,
+            "geocodes": {
+                "main": {
+                    "latitude": 35.54846517643472,
+                    "longitude": 139.7802546992898
+                }
+            },
+            "location": {
+                "address": "羽田空港3丁目3-2",
+                "country": "JP",
+                "locality": "Tokyo",
+                "postcode": "144-0041",
+                "region": "Tokyo"
+            },
+            "name": "Tokyo International (Haneda) Airport (HND) (東京国際空港 (羽田空港))",
+            "related_places": {
+                "children": [
+                    {
+                        "fsq_id": "50b7d917e4b016c53bef9e2a",
+                        "name": "RJTT Spot 404"
+                    },
+                    {
+                        "fsq_id": "573bd1cacd10f9418da49ba1",
+                        "name": "ゼヨニキ"
+                    },
+                    {
+                        "fsq_id": "4b8f7761f964a5204d5533e3",
+                        "name": "東京国際空港第3駐車場"
+                    }
+                ]
+            },
+            "timezone": "Asia/Tokyo"
+        },
+        {
+            "fsq_id": "4b166583f964a520acb823e3",
+            "categories": [
+                {
+                    "id": 17023,
+                    "name": "Computers and Electronics Retail",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/default_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "distance": 24173,
+            "geocodes": {
+                "main": {
+                    "latitude": 35.69003959498253,
+                    "longitude": 139.69842822472324
+                }
+            },
+            "location": {
+                "address": "西新宿1丁目11-1",
+                "address_extended": "ヨドバシカメラマルチメディア館北館",
+                "country": "JP",
+                "locality": "Shinjuku",
+                "neighborhood": [
+                    "Ochanomizu / Akihabara / Kanda"
+                ],
+                "postcode": "160-0023",
+                "region": "Tokyo"
+            },
+            "name": "Yodobashi Camera (ヨドバシカメラ 新宿西口本店)",
+            "related_places": {
+                "children": [
+                    {
+                        "fsq_id": "4e116649ae602afe96bcf0ac",
+                        "name": "ヨドバシカメラ 携帯アクセサリー館"
+                    },
+                    {
+                        "fsq_id": "525f741411d24e19fdfc044d",
+                        "name": "Apple Shop"
+                    },
+                    {
+                        "fsq_id": "5c2729e2419a9e002c890613",
+                        "name": "ヨドバシ酒店"
+                    }
+                ]
+            },
+            "timezone": "Asia/Tokyo"
+        },
+        {
+            "fsq_id": "4b0a57d1f964a5205d2323e3",
+            "categories": [
+                {
+                    "id": 17114,
+                    "name": "Shopping Mall",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/mall_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "distance": 30360,
+            "geocodes": {
+                "main": {
+                    "latitude": 35.532334,
+                    "longitude": 139.696296
+                }
+            },
+            "location": {
+                "address": "幸区堀川町72-1",
+                "country": "JP",
+                "cross_street": "",
+                "locality": "Kawasaki",
+                "neighborhood": [
+                    "幸区"
+                ],
+                "postcode": "212-8576",
+                "region": "Kanagawa"
+            },
+            "name": "Lazona Kawasaki Plaza (ラゾーナ川崎プラザ)",
+            "related_places": {
+                "children": [
+                    {
+                        "fsq_id": "508a7570e4b0e1fc2a14217a",
+                        "name": "創作うどん あんぷく ラゾーナ川崎店"
+                    },
+                    {
+                        "fsq_id": "50813211e4b0354c58946a72",
+                        "name": "ABC-MART Premier Stage"
+                    },
+                    {
+                        "fsq_id": "50695b11e4b0c318abcef081",
+                        "name": "ラゾーナ川崎西駐輪場"
+                    }
+                ]
+            },
+            "timezone": "Asia/Tokyo"
+        }
+    ],
+    "context": {
+        "geo_bounds": {
+            "circle": {
+                "center": {
+                    "latitude": 35.6999015556011,
+                    "longitude": 139.43084599681234
+                },
+                "radius": 49280
+            }
+        }
+    }
+}

@@ -15,8 +15,8 @@
               <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                  <a
-                    href="#"
+                  <router-link
+                    to="/"
                     class="
                       bg-gray-900
                       text-white
@@ -27,11 +27,11 @@
                       font-medium
                     "
                     aria-current="page"
-                    >Home</a
+                    >Home</router-link
                   >
 
-                  <a
-                    href="#"
+                  <router-link
+                    to="/venue"
                     class="
                       text-gray-300
                       hover:bg-gray-700 hover:text-white
@@ -41,7 +41,7 @@
                       text-sm
                       font-medium
                     "
-                    >Venue</a
+                    >Venue</router-link
                   >
                 </div>
               </div>
@@ -53,8 +53,8 @@
         <div class="md:hidden" id="mobile-menu">
           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a
-              href="#"
+            <router-link
+              to="/"
               class="
                 bg-gray-900
                 text-white
@@ -66,11 +66,11 @@
                 font-medium
               "
               aria-current="page"
-              >Home</a
+              >Home</router-link
             >
 
-            <a
-              href="#"
+            <router-link
+              to="/venue"
               class="
                 text-gray-300
                 hover:bg-gray-700 hover:text-white
@@ -81,7 +81,7 @@
                 text-base
                 font-medium
               "
-              >Venue</a
+              >Venue</router-link
             >
           </div>
         </div>
@@ -104,8 +104,76 @@
         </div>
       </main>
     </div>
-
-    <router-link to="/">Home</router-link>
   </div>
+  <Venue />
   <router-view />
 </template>
+
+<script>
+import Venue from "./views/Venue.vue";
+
+export default {
+  name: "App",
+  methods: {},
+  components: {
+    Venue,
+  },
+  created: async () => {
+    // const cities = [
+    //   {
+    //     name: "Tokyo",
+    //     lat: 35.6762,
+    //     lon: 139.6503,
+    //   },
+    //   {
+    //     name: "Yokohama",
+    //     lat: 35.4437,
+    //     lon: 139.638,
+    //   },
+    //   {
+    //     name: "Kyoto",
+    //     lat: 35.0116,
+    //     lon: 135.7681,
+    //   },
+    //   {
+    //     name: "Osaka",
+    //     lat: 34.6937,
+    //     lon: 135.5023,
+    //   },
+    //   {
+    //     name: "Sapporo",
+    //     lat: 43.0618,
+    //     lon: 141.3545,
+    //   },
+    //   {
+    //     name: "Nagoya",
+    //     lat: 35.1815,
+    //     lon: 136.9066,
+    //   },
+    // ];
+
+    // const key = "fsq31aaCRRfkOjwH504aaH35EgtPSwm06/AvwGQNTNwGwhE=";
+    const options = {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        Authorization: "fsq31aaCRRfkOjwH504aaH35EgtPSwm06/AvwGQNTNwGwhE=",
+      },
+    };
+
+    const res = await fetch(
+      "https://api.foursquare.com/v3/places/search?near=Tokyo%2C%20JP",
+      options
+    );
+    const data = await res.json();
+    console.log(data);
+    // const res = await fetch(
+    //   `https://api.openweathermap.org/data/2.5/onecall?lat=${cities[0].lat}&lon=${cities[0].lon}&exclude=daily&appid=f158dca0fc3bad2a0c230eef512eb2e8`
+    // );
+    // const data = await res.json();
+    // console.log(data);
+    // console.log(cities);
+    // console.log(1);
+  },
+};
+</script>
