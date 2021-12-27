@@ -1,5 +1,5 @@
 <template>
-  <router-view />
+  <router-view :currentWeather="currentWeather" />
 </template>
 
 <script>
@@ -31,7 +31,14 @@ export default {
       const res = await fetch(
         `${process.env.VUE_APP_WEATHER_API_URL}?lat=${lat}&lon=${lon}&exclude=,current,minutely,hourly,alerts&appid=${process.env.VUE_APP_WEATHER_API_APP_ID}`
       );
-      return await res.json();
+      const data = await res.json();
+      const length = data.daily.length;
+
+      if (length) {
+        return data.daily[length - 1];
+      } else {
+        return {};
+      }
     },
   },
   async created() {
@@ -68,8 +75,7 @@ export default {
       },
     ];
 
-    const data = await this.getWeather(cities[0].lat, cities[0].lon);
-    console.log(data);
+    this.currentWeather = await this.getWeather(cities[0].lat, cities[0].lon);
   },
 };
 </script>

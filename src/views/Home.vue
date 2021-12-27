@@ -48,7 +48,7 @@
           <div class="p-8 m-8 rounded-lg shadow-md flex flex-col bg-white">
             <div class="mb-5">
               <h4 class="text-2xl">Tokyo</h4>
-              <h5>Asian/Tokyo</h5>
+              <h5>{{ currentWeather.dt }}</h5>
             </div>
 
             <div class="mb-5">
@@ -57,16 +57,16 @@
                 src="http://openweathermap.org/img/wn/03d@2x.png"
                 alt="Weather Image"
               />
-              <h4 class="text-2xl">Clouds</h4>
-              <h5>Scattered Clouds</h5>
+              <h4 class="text-2xl">{{ currentWeather.weather[0].main }}</h4>
+              <h5>{{ currentWeather.weather[0].description }}</h5>
             </div>
 
             <div>
-              <h1 class="text-5xl">22°</h1>
+              <h1 class="text-5xl">{{ currentWeather.temp.day }}°</h1>
               <h2 class="text-3xl">TODAY</h2>
               <div>
-                <span class="text-sm">Max: 22°</span>
-                <span class="text-sm">Min: 15°</span>
+                <span class="text-sm">Max: {{ currentWeather.temp.max }}°</span>
+                <span class="text-sm">Min: {{ currentWeather.temp.min }}°</span>
               </div>
             </div>
           </div>
@@ -123,5 +123,8 @@
 <script>
 export default {
   name: "Home",
+  props: {
+    currentWeather: Object,
+  },
 };
 </script>
