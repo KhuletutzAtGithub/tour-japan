@@ -1,24 +1,3 @@
-# tour-japan
+For the UI and UX, I just used a simple navigation bar to be flexible enough for future features. A hero was split into two for dynamics and to feel some elements from Japan. Straightforward was a form for weather and place search, minimizing the steps for their original intention of knowing the weather and searching for places near them. Upon visiting the site, it will automatically fetch data for Tokyo, which is a more popular city in Japan. Each form element is self-explanatory emphasizing elements that are important for tourists, limiting information to what's important so their eyes are at ease. Place results will hide the weather information to prepare them for the next intention which is to provide place information displaying distance, categories, and their coordinates for exact location, which matters the most.
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+As for the code/architecture, I decided to separate the Vue from Laravel for the backend to have some flexibility and extendability features like transforming responses from external APIs and maybe applying some machine learning algorithm to optimize the result given back to the SPA.
