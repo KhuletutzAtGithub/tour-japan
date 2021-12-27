@@ -5,63 +5,80 @@
 <script>
 export default {
   name: "App",
-  methods: {},
-  created: async () => {
-    // const cities = [
-    //   {
-    //     name: "Tokyo",
-    //     lat: 35.6762,
-    //     lon: 139.6503,
-    //   },
-    //   {
-    //     name: "Yokohama",
-    //     lat: 35.4437,
-    //     lon: 139.638,
-    //   },
-    //   {
-    //     name: "Kyoto",
-    //     lat: 35.0116,
-    //     lon: 135.7681,
-    //   },
-    //   {
-    //     name: "Osaka",
-    //     lat: 34.6937,
-    //     lon: 135.5023,
-    //   },
-    //   {
-    //     name: "Sapporo",
-    //     lat: 43.0618,
-    //     lon: 141.3545,
-    //   },
-    //   {
-    //     name: "Nagoya",
-    //     lat: 35.1815,
-    //     lon: 136.9066,
-    //   },
-    // ];
-
-    // const key = "fsq31aaCRRfkOjwH504aaH35EgtPSwm06/AvwGQNTNwGwhE=";
-    const options = {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        Authorization: "fsq31aaCRRfkOjwH504aaH35EgtPSwm06/AvwGQNTNwGwhE=",
-      },
+  data() {
+    return {
+      VUE_APP_PLACES_API_KEY: "",
+      VUE_APP_PLACES_API_URL: "",
+      VUE_APP_WEATHER_API_APP_ID: "",
+      VUE_APP_WEATHER_API_URL: "",
+      currentWeather: {},
+      currentPlaces: [],
     };
+  },
+  methods: {
+    async getPlaces(city) {
+      const options = {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+          Authorization: this.VUE_APP_PLACES_API_KEY,
+        },
+      };
 
-    const res = await fetch(
-      "https://api.foursquare.com/v3/places/search?near=Tokyo%2C%20JP",
-      options
-    );
-    const data = await res.json();
-    console.log(data);
-    // const res = await fetch(
-    //   `https://api.openweathermap.org/data/2.5/onecall?lat=${cities[0].lat}&lon=${cities[0].lon}&exclude=daily&appid=f158dca0fc3bad2a0c230eef512eb2e8`
-    // );
-    // const data = await res.json();
-    // console.log(data);
-    // console.log(cities);
-    // console.log(1);
+      const res = await fetch(
+        `${this.VUE_APP_PLACES_API_URL}/search?near=${city}, JP`,
+        options
+      );
+      return await res.json();
+    },
+    async getWeather(lat, lon) {
+      const res = await fetch(
+        `${this.VUE_APP_WEATHER_API_URL}?lat=${lat}&lon=${lon}&exclude=,current,minutely,hourly,alerts&appid=${this.VUE_APP_WEATHER_API_APP_ID}`
+      );
+      return await res.json();
+    },
+  },
+  created: async () => {
+    this.VUE_APP_PLACES_API_KEY = process.env.VUE_APP_PLACES_API_KEY;
+    this.VUE_APP_PLACES_API_URL = process.env.VUE_APP_PLACES_API_URL;
+    this.VUE_APP_WEATHER_API_APP_ID = process.env.VUE_APP_WEATHER_API_APP_ID;
+    this.VUE_APP_WEATHER_API_URL = process.env.VUE_APP_WEATHER_API_URL;
+
+    const cities = [
+      {
+        name: "Tokyo",
+        lat: 35.6762,
+        lon: 139.6503,
+      },
+      {
+        name: "Yokohama",
+        lat: 35.4437,
+        lon: 139.638,
+      },
+      {
+        name: "Kyoto",
+        lat: 35.0116,
+        lon: 135.7681,
+      },
+      {
+        name: "Osaka",
+        lat: 34.6937,
+        lon: 135.5023,
+      },
+      {
+        name: "Sapporo",
+        lat: 43.0618,
+        lon: 141.3545,
+      },
+      {
+        name: "Nagoya",
+        lat: 35.1815,
+        lon: 136.9066,
+      },
+    ];
+
+    this.currentWeather = await this.getWeather(cities[0].lat, cities[0].lon);
+    console.log(this.currentWeather);
   },
 };
 </script>
