@@ -7,10 +7,6 @@ export default {
   name: "App",
   data() {
     return {
-      VUE_APP_PLACES_API_KEY: "",
-      VUE_APP_PLACES_API_URL: "",
-      VUE_APP_WEATHER_API_APP_ID: "",
-      VUE_APP_WEATHER_API_URL: "",
       currentWeather: {},
       currentPlaces: [],
     };
@@ -21,29 +17,24 @@ export default {
         method: "GET",
         headers: {
           Accept: "application/json",
-          Authorization: this.VUE_APP_PLACES_API_KEY,
+          Authorization: process.env.VUE_APP_PLACES_API_KEY,
         },
       };
 
       const res = await fetch(
-        `${this.VUE_APP_PLACES_API_URL}/search?near=${city}, JP`,
+        `${process.env.VUE_APP_PLACES_API_URL}/search?near=${city}, JP`,
         options
       );
       return await res.json();
     },
     async getWeather(lat, lon) {
       const res = await fetch(
-        `${this.VUE_APP_WEATHER_API_URL}?lat=${lat}&lon=${lon}&exclude=,current,minutely,hourly,alerts&appid=${this.VUE_APP_WEATHER_API_APP_ID}`
+        `${process.env.VUE_APP_WEATHER_API_URL}?lat=${lat}&lon=${lon}&exclude=,current,minutely,hourly,alerts&appid=${process.env.VUE_APP_WEATHER_API_APP_ID}`
       );
       return await res.json();
     },
   },
-  created: async () => {
-    this.VUE_APP_PLACES_API_KEY = process.env.VUE_APP_PLACES_API_KEY;
-    this.VUE_APP_PLACES_API_URL = process.env.VUE_APP_PLACES_API_URL;
-    this.VUE_APP_WEATHER_API_APP_ID = process.env.VUE_APP_WEATHER_API_APP_ID;
-    this.VUE_APP_WEATHER_API_URL = process.env.VUE_APP_WEATHER_API_URL;
-
+  async created() {
     const cities = [
       {
         name: "Tokyo",
@@ -77,8 +68,8 @@ export default {
       },
     ];
 
-    this.currentWeather = await this.getWeather(cities[0].lat, cities[0].lon);
-    console.log(this.currentWeather);
+    const data = await this.getWeather(cities[0].lat, cities[0].lon);
+    console.log(data);
   },
 };
 </script>
